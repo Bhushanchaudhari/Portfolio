@@ -108,10 +108,10 @@ section{
     margin-top:20px;
 }
 .w50{
-    min-width: 25%;
+    min-width: auto;
 }
 .w50 img{
-    max-width: 100%;
+    max-width: auto;
 }
 
 /* Crating Logo & Menu's Header Using CSS */
