@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="ext.js" langauage="javascript"></script>
+    <!-- // font awesome cdn link  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Creating Menu Tabs & Logo at Top Using HTML-->
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Skills</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Testimonial</a></li>
+            <!-- <li><a href="#testimonial" onclick="toggleMenu();">Testimonial</a></li> -->
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Creating Banner layout in html -->
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hello, I'm <br> <span>Bhushan Chaudhari</span></h2>
+            <h3>I'm a Full Stack Web Developer</h3>
+            <a href="#contact" class="btn">Hire me</a>
+
+        </div>
+    </section>
+
+    <!-- Creating About me Layout in html -->
+    <section class="about" id="about">
+        <div class="heading">
+            <p>Get to Know me</p>
+            <h2>About Me</h2>
+
+        </div>
+        <div class="content">
+            <div class="w50">
+                <img src="images/mypic2.jpg" alt="" class="propic">
+            </div>
+            <div class="contentBx">
+                <h3>Who am i?</h3>
+                <h2>I'm <b>Bhushan Chaudhari</b>, a Web Developer and Android Developer</h2>
+                <p>I'm an Engineering graduate with a specialization in information technology, Along with my degree I
+                    have completed several courses in different technologies. Now looking for job and doing freelancing.
+                </p><br>
+
+                <div class="heading bottom">
+                    <a href="images/resume.pdf" target="_blank" class="btn round">Download CV</a>
+                    <div class="bt">
+                        <b>Name:</b> Bhushan Chaudhari<br>
+                        <b>Age:</b> 22<br>
+                    </div>
+                    <div class="bt">
+                        <b>Email:</b> bhushanofficial23@gmail.com<br>
+                        <b>Loaction:</b>Nandurbar<br>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Creating Services layout in HTML -->
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>My Skills</h2>
+            <p>Technical knowledge</p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <i class="fa fa-css3 fa-4x"></i>
+                <h3>Web Design CSS</h3>
+                <p> Building Responsive website using HTML5, CSS, Bootstrap, Jquery etc.</p>
+            </div>
+            <div class="servicesBx">
+                <i class="fa fa-android fa-4x"></i>
+                <h3>Android Developer</h3>
+                <p> Develop Basic android application.</p>
+            </div>
+            <div class="servicesBx">
+                <img src="images/java.png" />
+                <h3>Java</h3>
+                <p> Core java with OOPs concepts.</p>
+            </div>
+            <div class="servicesBx">
+                <img src="images/cpp.png"/>
+                <h3>C/CPP</h3>
+                <p> Good knowledge of C/CPP programming with OOPs concepts.</p>
+            </div>
+            <div class="servicesBx">
+                <i class="fa fa-database fa-4x"></i>
+                <h3>SQL</h3>
+                <p> Good understandin of sql and database handling.</p>
+            </div>
+           
+            <div class="servicesBx">
+                <img src="images/python.png" alt="">
+                <h3>Python </h3>
+                <p> Good knowledge of python programming.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Creating work section  -->
+    <section class="work" id="work">
+        <div class="heading">
+            <h2>My Testimonial</h2>
+            <p>Showcasing some my Certifications</p>
+        </div>
+        <div class="content">
+            <div class="workBx">
+                <a href="" traget="_blank">
+                    <img src="images/java.jpg" alt="">
+                    <p>Java Certification by MCCE.</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="" target="_blank">
+                    <img src="images/cpp.jpg" alt="">
+                    <p>C/CPP Certification by MCCE.</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="" target="_blank">
+                    <img src="images/js.jpg" alt="">
+                    <p>javascript</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="" target="_blank">
+                    <img src="images/ds.jpg" alt="">
+                    <p>Data Structure</p>
+                </a>
+            </div>
+            <!-- <div class="workBx">
+                <a href="" target="_blank">
+                    <img src="images/2.jpg" alt="">
+                    <p>Ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="" target="_blank">
+                    <img src="images/2.jpg" alt="">
+                    <p>Ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </a>
+            </div> -->
+            <div class="heading">
+                <a href="#work" class="btn" style="color:#fff">View all My Courses</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Creating contact layout in html -->
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <p>Feel free to contact me anytime</p>
+            <h2>Get in Touch</h2>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Conatct Info</h3>
+                <p>Always availabel for freelance work if the right project comes along, Feel free to contact me!</p>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <address>
+                                Nandurbar,<br>Maharashtra,<br>India
+                            </address>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone no :</h3>
+                            <p>+91 9112230898</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email Address</h3>
+                            <p>bhushanofficial23@gmail.com</p>
+                        </div>
+                    </div>
+                    <br>
+                    <h3>Social Connect</h3>
+                    <div class="boxSocial">
+                        <div class="icon">
+                            <a href="https://www.facebook.com/chaudhari23" target="_blank">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.twitter.com/ibhushan23" target="_blank">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/chaudhari23" target="_blank">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://github.com/Bhushanchaudhari" target="_blank">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.instagram.com/ibhushanchaudhary" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form id="contactForm" onsubmit="return validation()">
+                    <h3>Message Me</h3>
+                    <input type="text" placeholder="Full Name" id="name">
+                    <input type="text" placeholder="Email" id="email">
+                    <textarea name="" id="" rows=5 placeholder="Your Message" id="textarea"></textarea>
+                    <input type="submit" value="Send Message" name="" />
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creating Footer Layout in HTML  -->
+    <footer class="copyright">
+        <p>&copy; 2020, bhushanchaudhari.com, Allrights reserved</p>
+    </footer>
+
+
+</body>
+
+</html>
