@@ -146,6 +146,12 @@ header ul li{
     list-style-type: none;
     position: relative;
 }
+header ul li:hover{
+    background-color: #009e66;
+    transition: 0.5s;
+    border-radius: 5px;
+    font-weight: 500;
+}
 header ul li a{
     position: relative;
     color: #fff;
@@ -269,7 +275,7 @@ header.sticky ul li a
     transition: 0.5s;
 }
 .formBx form input::placeholder,
-.formBx form textarea:::placeholder{
+.formBx form textarea::placeholder{
     color:#999;
 }
 .formBx form input[type="submit"]{
@@ -344,7 +350,8 @@ footer.copyright{
 {
     header,
     header .sticky{
-        padding:20px 20px;
+        padding:20px 50px;
+        
     }
     header .menu{
         display:none;
@@ -355,12 +362,13 @@ footer.copyright{
         display:block;
         top:75px;
         left:-100%;
-        padding:100px 50px;
+        padding:50px 50px;
         width:100%;
         height:100vh;
         text-align: center;
         border-top: 1px solid rgba(0,0,0,0.2);
         transition: 0.5s;
+
     }
     header .menu.active{
         position:fixed;
@@ -368,7 +376,7 @@ footer.copyright{
         display:block;
         top:75px;
         left:0;
-        padding:50px 50px;
+        padding:100px 50px;
         width:100%;
         height:100vh;
         text-align: center;
@@ -410,7 +418,7 @@ footer.copyright{
         background-position: center;
         background-size: 100vh;
         display: flex;
-               
+        
     }
     .banner h2{
         font-size: 1.5em;
